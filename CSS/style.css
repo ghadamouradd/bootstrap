@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{position: relative;}
+.backg{
+    width: 100%;
+    height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../Images/dmitrii-zhodzishskii-5aEHOQrb2Qk-unsplash.jpg);
+}
+.boxes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between; /* Distribute space between boxes */
+    align-items: center;
+    padding: 0 50px;
+}
+.box1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(141, 140, 140);
+    opacity: 0;
+}
+.box1:hover::after{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    opacity: 0.2;
+}
+.box1::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(141, 140, 140);
+    opacity: 0;
+}
+.box1:hover::before{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    opacity: 0.2;
+}
+.backg2{
+    width: 100%;
+    height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../Images/sharm/img6.jpg);
+}
+.combos{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   display: flex;
+   justify-content: space-around;
+}
+.cont1 , .cont2 , .cont3{
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    position: absolute;
+    width: 400px;
+}
+.cont1{background-image: url(../Images/trainer-1.jpg);}
+.cont2{background-image: url(../Images/trainer-2.jpg);}
+.cont3{background-image: url(../Images/trainer-3.jpg);}
+.overlay{
+    position: absolute;
+    height: 550px; width: 400px;
+    background-color: rgba(65, 64, 64, 0.5);
+    z-index: 1;
+    border-radius: 15px;
+}
+.expand{
+    position: absolute;
+    z-index: 3;
+}
+.combo1 , .combo2 , .combo3{
+    display: flex;
+   transform: scale(1,1);
+    transition: 1s;
+    flex-grow: 1;
+    flex-wrap: 1;
+    /* margin-left: 50px; */
+}
+.combo1:hover , .combo2:hover , .combo3:hover{
+    transform: scale(0.8,0.8);
+}
+.imggg {
+    transition: opacity 1s;
+  }
+
+  .imggg:hover {
+    opacity: 0.8;
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin: 15px;
+  }
+  .icon{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .icon:hover{color: teal;}

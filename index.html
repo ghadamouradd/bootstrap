@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+  </head>
+  <body>
+    <div class="icons">
+      <i class="icon fa-brands fa-square-facebook"></i>
+      <i class="icon fa-brands fa-square-whatsapp"></i>
+      <i class="icon fa-brands fa-square-twitter"></i>
+      <i class="icon fa-brands fa-linkedin"></i>
+      <i class="icon fa-brands fa-square-instagram"></i>
+    </div>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-sm" style="background-color: rgba(153, 195, 195, 0.7);">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <img src="Images/logo1.jpg" alt="Bootstrap" width="40" height="40" style="border-radius: 50%;">
+            GOOD
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </a>
+                <ul class="dropdown-menu" style="background-color: rgba(191, 249, 249, 0.6);">
+                  <li><a class="dropdown-item" href="#">Aswan</a></li>
+                  <li><a class="dropdown-item" href="#">Sharm</a></li>
+                  <li><a class="dropdown-item" href="#">Hurghada</a></li>
+                  <li><a class="dropdown-item" href="#">Al-Galala</a></li>
+                  <li><a class="dropdown-item" href="#">Cairo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+              <button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3 text-muted">
+                  <label for="recipient-name" class="col-form-label">Email address:</label>
+                  <input type="email" class="form-control" id="email-address">
+                  We'll never share your email address with anyone else.
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Password:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img src="Images/cairo/img1.jpg" class="d-block w-100" alt="..." style="height: 100vh; width: 100%; background-size: cover;">
+          <div class="jumbotron jumbotron-fluid position-absolute text-center w-75" style="top: 80%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(2, 137, 137, 0.7);">
+            <div class="container">
+              <h1 class="display-4">Cairo</h1>
+              <p class="lead">Thank you Cairo</p>
+              <button class="btn btn-primary">Visit Us</button> <br>
+            </div>
+            <br>
+          </div>
+          </div>
+         
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="Images/aswan/img1.jpg" class="d-block w-100" alt="..." style="height: 100vh; width: 100%; background-size: cover;">
+            <div class="jumbotron jumbotron-fluid position-absolute text-center w-75" style="top: 80%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(2, 137, 137, 0.7);">
+              <div class="container">
+                <h1 class="display-4">Aswan</h1>
+                <p class="lead">Thank you Aswan</p>
+                <button class="btn btn-primary">Visit Us</button> <br>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/sharm/img2.jpg" class="d-block w-100" alt="..." style="height: 100vh; width: 100%; background-size: cover;">
+            <div class="jumbotron jumbotron-fluid position-absolute text-center w-75" style="top: 80%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(2, 137, 137, 0.7);">
+              <div class="container">
+                <h1 class="display-4">Sharm</h1>
+                <p class="lead">Thank you Sharm</p>
+                <button class="btn btn-primary">Visit Us</button> <br>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <div class="mt-4 p-5 bg-info text-white rounded">
+            <h1>WELCOME</h1>
+            <p>Egypt has one of the longest histories of any country, tracing its heritage along the Nile Delta back to the 6th–4th millennia BCE. Considered a cradle of civilisation, Ancient Egypt saw some of the earliest developments of writing, agriculture, urbanisation, organised religion and central government.</p>
+            <button class="btn btn-light text-primary" type="submit">Learn more!</button>
+        </div>
+
+
+      <div class="mt-4 p-5 bg-warning text-white rounded text-center" style="border-radius: 8px;">
+        <h1>Popular destintations in Egypt</h1>
+      </div><br>
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              GIZA CITY
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Iconic monuments such as the Giza Necropolis and its Great Sphinx, as well the ruins of Memphis, Thebes, Karnak, and the Valley of the Kings, reflect this legacy and remain a significant focus of scientific and popular interest.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              LUXOR CITY
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Modern Egypt dates back to 1922, when it gained independence from the British Empire as a monarchy. Following the 1952 revolution, Egypt declared itself a republic, and in 1958 it merged with Syria to form the United Arab Republic, which dissolved in 1961.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              SHARM EL-SHEIKH
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world, and a middle power worldwide.</div>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="mt-4 p-5 bg-secondary text-white rounded text-center d-flex align-items-center justify-content-center " style="border-radius: 8px; height: 50px;">
+        <h1>Translate from Arabic to English </h1>
+      </div>
+      <div class=" p-5 bg-info text-white" >
+        <p style="font-size: 20px;">Write and translate <code><a href="#">Press Here!</a></code></p>
+           <!-- Button trigger modal -->
+           <a href="#" class="tooltip-test" title="Copy to clipboard">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#englishModal">
+              Copy
+            </button></a>
+            <br>
+
+            <!-- Modal -->
+            <div class="modal fade text-dark" id="englishModal" tabindex="-1" aria-labelledby="englishModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Text copied.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <textarea class="form-control text-muted" rows="5" id="comment" name="text">Translate</textarea>
+        </div><br>
+
+        <div class="mt-4 p-5 bg-secondary text-white rounded text-center d-flex align-items-center justify-content-center " style="border-radius: 8px; height: 50px;">
+            <h1>Translate from Arabic to French </h1>
+          </div>
+          <div class=" p-5 bg-info text-white" >
+            <p style="font-size: 20px;">Write and translate <code><a href="#">Press Here!</a></code></p>
+                    <!-- Button trigger modal -->
+                    <a href="#" class="tooltip-test" title="Copy to clipboard">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#englishModal">
+                        Copy
+                      </button></a>
+                  <br>
+
+                  <!-- Modal -->
+                  <div class="modal fade text-dark" id="englishModal" tabindex="-1" aria-labelledby="englishModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Text copied.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <textarea class="form-control text-muted" rows="5" id="comment" name="text">Translate</textarea>
+            </div><br>
+
+            <div class="mt-4 p-5 bg-secondary text-white rounded text-center d-flex align-items-center justify-content-center " style="border-radius: 8px; height: 50px;">
+                <h1>Translate from Arabic to German </h1>
+              </div>
+              <div class=" p-5 bg-info text-white" >
+                <p style="font-size: 20px;">Write and translate <code><a href="#">Press Here!</a></code></p>
+                          <!-- Button trigger modal -->
+                    <a href="#" class="tooltip-test" title="Copy to clipboard">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#englishModal">
+                      Copy
+                    </button></a>
+                    <br>
+
+                    <!-- Modal -->
+                    <div class="modal fade text-dark" id="englishModal" tabindex="-1" aria-labelledby="englishModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Text copied.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <textarea class="form-control text-muted" rows="5" id="comment" name="text">Translate</textarea>
+                </div><br>
+        
+
+
+        <div class="backg"></div>
+        <div class="text p-5 bg-info text-white rounded text-center d-flex align-items-center justify-content-center " style=" height: 50px;">
+          <h1>Popular destinations in Egypt </h1>
+        </div> <br><br>
+      
+
+      <div class="boxes bg-muted">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+                <img src="Images/cairo/img3.jpg" alt="cairo" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>Cairo</h2>
+                <p>This is Cairo</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border ml-200px" style=" height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+                <img src="Images/alex/IMG-20230227-WA0035.jpg" alt="Alex" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>Alexandria</h2>
+                <p>This is Alex</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border ml-200px" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+                <img src="Images/luxur/img5.jpg" alt="Luxor" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>Luxor</h2>
+                <p>This is Luxor</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="boxes bg-muted">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+                <img src="Images/aswan/img9.jpg" alt="Aswan" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>Aswan</h2>
+                <p>This is Aswan</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+                <img src="Images/new cairo/IMG-20230227-WA0047.jpg" alt="cairo" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>New Capital</h2>
+                <p>This is New Capital</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px; ">
+                <img src="Images/sharm/img4.jpg" alt="cairo" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+                <h2>Sharm El-Sheikh</h2>
+                <p>This is Sharm El-Sheikh</p>
+                <input type="button" class="btn btn-primary" value="Know More">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="boxes bg-muted">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+              <img src="Images/Hurghada/zyanya-OMwEkftvQKs-unsplash.jpg" alt="Hurghada" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+              <h2>Hurghada</h2>
+              <p>This is Hurghada</p>
+              <input type="button" class="btn btn-primary" value="Know More">
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="box1 shadow-outline shadow border" style="height: 520px; width: 350px; background-color: beige; border-radius: 5px;">
+              <img src="Images/siwa/img8.jpg" alt="siwa" style="height: 380px; width: 300px; border-radius: 5px;" class="shadow-outline shadow border">
+              <h2>Siwa</h2>
+              <p>This is Siwa</p>
+              <input type="button" class="btn btn-primary" value="Know More">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+
+      <div class="backg2"></div> <br>
+
+
+      <div class="text p-5 bg-info text-white rounded text-center d-flex align-items-center justify-content-center shadow-outline shadow border" style=" height: 50px;">
+        <h1>Thanks for </h1>
+      </div> <br><br>
+
+
+    <div class="combos">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+              <div class="combo1">
+                  <div class="overlay"></div>
+                  <div class="cont1 shadow-outline shadow border" style="height: 550px; background-color: #e3f2fd; border-radius: 15px;">
+                    <br>
+                    
+                  </div>
+                  <div class="expand "><br><br>
+                    <h4 class="pt-20 text-white " style="margin-left: 15px; ">ALL THANKS AND APPRECIATION</h4>
+                    <span class="text-white" style="margin-left: 15px; "><i class="fa-regular fa-clock"></i> Aug 5, 2023</span>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <div style="height: 100px; width: 200px; border-radius: 50%;" class="text-white">
+                      <img src="Images/trainer-1.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%; margin-left: 15px;">
+                      <h5 style="margin-left: 15px; ">Eng. .......</h5>
+                      <span style="margin-left: 15px; ">Ui/Ux designer</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+              <div class="combo2">
+                <div class="overlay"></div>
+                <div class="cont2 shadow-outline shadow border" style="height: 550px; background-color: #e3f2fd; border-radius: 15px;">
+                  <br>
+                  
+                </div>
+                <div class="expand "><br><br>
+                  <h4 class="pt-20 text-white " style="margin-left: 15px; ">ALL THANKS AND APPRECIATION</h4>
+                  <span class="text-white" style="margin-left: 15px; "><i class="fa-regular fa-clock"></i> Aug 5, 2023</span>
+                  <br><br><br><br><br><br><br><br><br><br>
+                  <div style="height: 100px; width: 200px; border-radius: 50%;" class="text-white">
+                    <img src="Images/trainer-2.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%; margin-left: 15px;">
+                    <h5 style="margin-left: 15px; ">Eng. .......</h5>
+                    <span style="margin-left: 15px; ">Fullstack developer</span>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+            <div class="combo3">
+              <div class="overlay"></div>
+              <div class="cont3 shadow-outline shadow border" style="height: 550px; background-color: #e3f2fd; border-radius: 15px;">
+                <br>
+                
+              </div>
+              <div class="expand "><br><br>
+                <h4 class="pt-20 text-white " style="margin-left: 15px; ">ALL THANKS AND APPRECIATION</h4>
+                <span class="text-white" style="margin-left: 15px; "><i class="fa-regular fa-clock"></i> Aug 5, 2023</span>
+                <br><br><br><br><br><br><br><br><br><br>
+                <div style="height: 100px; width: 200px; border-radius: 50%;" class="text-white">
+                  <img src="Images/trainer-3.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%; margin-left: 15px;">
+                  <h5 style="margin-left: 15px; ">Eng. .......</h5>
+                  <span style="margin-left: 15px; ">Frontend developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <h2 class="text-primary text-center">Egypt News</h2>
+    <div class="d-flex justify-content-center">
+      <div class="mt-4 p-5 text-dark rounded shadow-outline shadow border" style="height: 450px; width: 75%; background-color: rgb(211, 211, 211);">
+        
+        <h1>Podcast title</h1>
+        <p><i class="fa-solid fa-calendar-days"></i> Wed, Aug 16th 2023</p>
+        <div class="bg-primary" style="height: 5px; width: 150px; border-radius: 3px;"></div>
+        <p>Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world,</p> <p> and a middle power worldwide.[16] It is a developing country having a diversified economy, </p> <p>which is the third-largest in Africa, the 41st-largest economy by nominal GDP, and the 20th-largest</p> <p>  globally by PPP.Egypt is a founding member of the United Nations, the Non-Aligned Movement, </p> <p> the Arab League, the African Union, Organisation of Islamic Cooperation and the World Youth Forum.</p>
+      <br><br>
+      <button class="btn btn-outline-dark"><i class="fa-solid fa-tag"></i> Product</button>
+      <button class="btn btn-outline-dark"><i class="fa-regular fa-clock"></i> 55 mins</button>
+      <button class="btn btn-outline-dark text-success"><i class="fa-solid fa-play"></i> Play episode</button>
+      <img src="Images/galalh/IMG-20230227-WA0040.jpg" alt=".." style="clip-path: polygon(-2% -6%, 104% 0%, 100% 100%, 31% 107%); background-size: cover; height: 450px; width: 400px; margin-left: 692px; margin-top: -448px; border-radius: 5px;">
+      </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+      <div class="mt-4 p-5 text-dark rounded shadow-outline shadow border" style="position: relative; height: 450px; width: 75%; background-color: rgb(211, 211, 211);">
+        <img src="Images/Hurghada/ralf-schlegel-gGIaHmXcSp8-unsplash.jpg" alt=".." style="clip-path: polygon(-2% -6%, 89% -2%, 60% 105%, -7% 105%); background-size: cover; height: 450px; width: 400px; border-radius: 5px; margin-top: -50px; margin-left: -50px;">
+      <div style="position: absolute; margin-left: 380px; margin-top: -440px;">
+        <h1>Podcast title</h1>
+        <p><i class="fa-solid fa-calendar-days"></i> Wed, Aug 16th 2023</p>
+        <div class="bg-danger" style="height: 5px; width: 150px; border-radius: 3px;"></div>
+        <p>Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world, and a middle power worldwide.[16] It is a developing country having a diversified economy, which is the third-largest in Africa, the 41st-largest economy by nominal GDP, and the 20th-largest globally by PPP.Egypt is a founding member of the United Nations, the Non-Aligned Movement, the Arab League, the African Union, Organisation of Islamic Cooperation and the World Youth Forum.</p>
+      <br><br><br><br><br><br>
+      <button class="btn btn-outline-danger"><i class="fa-solid fa-tag"></i> Product</button>
+      <button class="btn btn-outline-danger"><i class="fa-regular fa-clock"></i> 55 mins</button>
+      <button class="btn btn-outline-danger text-success"><i class="fa-solid fa-play"></i> Play episode</button>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+      <div class="mt-4 p-5 text-dark rounded shadow-outline shadow border" style="height: 450px; width: 75%; background-color: rgb(211, 211, 211);">
+        
+        <h1>Podcast title</h1>
+        <p><i class="fa-solid fa-calendar-days"></i> Wed, Aug 16th 2023</p>
+        <div class="bg-warning" style="height: 5px; width: 150px; border-radius: 3px;"></div>
+        <p>Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world,</p> <p> and a middle power worldwide.[16] It is a developing country having a diversified economy, </p> <p>which is the third-largest in Africa, the 41st-largest economy by nominal GDP, and the 20th-largest</p> <p>  globally by PPP.Egypt is a founding member of the United Nations, the Non-Aligned Movement, </p> <p> the Arab League, the African Union, Organisation of Islamic Cooperation and the World Youth Forum.</p>
+      <br><br>
+      <button class="btn btn-outline-warning"><i class="fa-solid fa-tag"></i> Product</button>
+      <button class="btn btn-outline-warning"><i class="fa-regular fa-clock"></i> 55 mins</button>
+      <button class="btn btn-outline-warning text-success"><i class="fa-solid fa-play"></i> Play episode</button>
+      <img src="Images/luxur/img11.jpg" alt=".." style="clip-path: polygon(-2% -6%, 104% 0%, 100% 100%, 31% 107%); background-size: cover; height: 450px; width: 400px; margin-left: 692px; margin-top: -448px; border-radius: 5px;">
+      </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+      <div class="mt-4 p-5 text-dark rounded shadow-outline shadow border" style="position: relative; height: 450px; width: 75%; background-color: rgb(211, 211, 211);">
+        <img src="Images/siwa/img10.jpg" alt=".." style="clip-path: polygon(-2% -6%, 89% -2%, 60% 105%, -7% 105%); background-size: cover; height: 450px; width: 400px; border-radius: 5px; margin-top: -50px; margin-left: -50px;">
+      <div style="position: absolute; margin-left: 380px; margin-top: -440px;">
+        <h1>Podcast title</h1>
+        <p><i class="fa-solid fa-calendar-days"></i> Wed, Aug 16th 2023</p>
+        <div class="bg-success" style="height: 5px; width: 150px; border-radius: 3px;"></div>
+        <p>Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world, and a middle power worldwide.[16] It is a developing country having a diversified economy, which is the third-largest in Africa, the 41st-largest economy by nominal GDP, and the 20th-largest globally by PPP.Egypt is a founding member of the United Nations, the Non-Aligned Movement, the Arab League, the African Union, Organisation of Islamic Cooperation and the World Youth Forum.</p>
+      <br><br><br><br><br><br>
+      <button class="btn btn-outline-success"><i class="fa-solid fa-tag"></i> Product</button>
+      <button class="btn btn-outline-success"><i class="fa-regular fa-clock"></i> 55 mins</button>
+      <button class="btn btn-outline-success text-success"><i class="fa-solid fa-play"></i> Play episode</button>
+      </div>
+      </div>
+    </div>
+
+
+<br>
+    <h2 class="text-success text-center">Join US</h2>
+
+    <div class="item-team d-flex justify-content-center">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item text-center d-flex flex-column justify-content-start mb-3 shadow-outline shadow border text-primary" style="height: 250px; width: 250px; background-color: rgb(250, 250, 238); border-radius: 10px; margin-right: 40px;">
+              <h3 class="p-2 mb-3">Subscribe Now</h3>
+              <a href="#" class="p-2 mb-3"><img src="Images/in.jpg" alt=".." style="border-radius: 20px;" class="imggg shadow-outline shadow border"></a>
+              <h3 class="p-2 mb-3">Go to link</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item text-center d-flex flex-column justify-content-start mb-3 shadow-outline shadow border text-primary" style="height: 250px; width: 250px; background-color: rgb(250, 250, 238); border-radius: 10px; margin-right: 40px;">
+              <h3 class="p-2 mb-3">Subscribe Now</h3>
+              <a href="#" class="p-2 mb-3"><img src="Images/insta.jpg" alt=".." style="border-radius: 20px;" class="imggg shadow-outline shadow border"></a>
+              <h3 class="p-2 mb-3">Go to link</h3>
+            </div>
+          </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="item text-center d-flex flex-column justify-content-start mb-3 shadow-outline shadow border text-primary" style="height: 250px; width: 250px; background-color: rgb(250, 250, 238); border-radius: 10px; margin-right: 40px;">
+                <h3 class="p-2 mb-3">Subscribe Now</h3>
+                <a href="#" class="p-2 mb-3"><img src="Images/tectok.jpg" alt=".." style="border-radius: 20px;" class="imggg shadow-outline shadow border"></a>
+                <h3 class="p-2 mb-3">Go to link</h3>
+              </div>
+            </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="item text-center d-flex flex-column justify-content-start mb-3 shadow-outline shadow border text-primary" style="height: 250px; width: 250px; background-color: rgb(250, 250, 238); border-radius: 10px;">
+                <h3 class="p-2 mb-3">Subscribe Now</h3>
+                <a href="#" class="p-2 mb-3"><img src="Images/twetter.jpg" alt=".." style="border-radius: 20px;" class="imggg shadow-outline shadow border"></a>
+                <h3 class="p-2 mb-3">Go to link</h3>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-primary " style="height: 500px; width: 100%;">
+      <div class="d-flex justify-content-center">
+        <div style="height: 1px; width: 400px; margin-top: 20px; margin-right: 200px;" class="bg-light"></div>
+        <div style="height: 1px; width: 400px; margin-top: 20px; margin-right: 200px;" class="bg-light"></div>
+        <div style="height: 1px; width: 400px; margin-top: 20px;" class="bg-light"></div>
+      </div> <br>
+      <div class="d-flex justify-content-center text-white">
+      <div style="height: 100px; width: 300px; margin-right: 250px;" class="d-flex">
+        <img src="Images/logo2.png" alt="..." style="border-radius: 50%; height: 100px; width: 100px; " class="shadow-outline shadow border white-shadow">
+        <h4 style="top: 50%; left: 50%; transform: translate(5%, 30%);">Good company</h4>
+      </div>
+      <div style="height: 100px; width: 300px; margin-right: 250px;" class="d-flex">
+        <img src="Images/logo2.png" alt="..." style="border-radius: 50%; height: 100px; width: 100px; " class="shadow-outline shadow border white-shadow">
+        <h4 style="top: 50%; left: 50%; transform: translate(5%, 30%);">Important Links</h4>
+      </div>
+      <div style="height: 100px; width: 300px;" class="d-flex">
+        <img src="Images/logo2.png" alt="..." style="border-radius: 50%; height: 100px; width: 100px;" class="shadow-outline shadow border white-shadow">
+        <h4 style="top: 50%; left: 50%; transform: translate(5%, 30%);">Vision</h4>
+      </div>
+      </div>
+      <br>
+      <div class="d-flex justify-content-center">
+        <div style="height: 1px; width: 400px; margin-top: 20px; margin-right: 200px;" class="bg-light"></div>
+        <div style="height: 1px; width: 400px; margin-top: 20px; margin-right: 200px;" class="bg-light"></div>
+        <div style="height: 1px; width: 400px; margin-top: 20px;" class="bg-light"></div>
+      </div> <br>
+     
+      <div class="d-flex justify-content-center">
+        <div class="d-flex-column text-white text-center" style="margin-right: 400px;">
+          <p>Tel: 000-000-000</p>
+          <p>Address: Egypt</p>
+          <p>Fax: 000-000-000</p>
+        </div>
+        <div class="d-flex-column text-center" style="margin-right: 400px;">
+          <p>Visit us</p>
+          <p>Take a look</p>
+          <p>Your health is more important</p>
+        </div>
+        <div class="d-flex-column text-white text-center" >
+          <p>Services for all</p>
+          <p>Provide best services</p>
+          <p>You'll be better than before</p>
+        </div>
+      </div>
+      <br>
+      <div style="height: 1px; width: 100%;" class="bg-light"></div>
+      <br>
+      <h2 class="text-center" style="color: rgb(180, 131, 227);">COPYRIGHT &copy; 2020 MANSOURA, GOOD COMPANY, ALL RIGHTS</h2>
+      <br>
+      <div style="height: 1px; width: 100%;" class="bg-light"></div>
+      <br>
+    </div>
+
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
